@@ -1,0 +1,310 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #000;
+  color: white;
+}
+
+.header{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%),url(Netflix-main-img.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 10px 8%;
+  position: relative;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.netflix-logo {
+  width: 150px;
+  cursor: pointer;
+}
+
+.border{
+  border: .4px solid grey;
+  border-radius: 3px;
+  margin: 5px ;
+  height: 25px;
+  width: 80px;
+}
+
+
+.header-lang{
+  position: absolute;
+  right: 280px;
+  height: 32px;
+  width: 130px; 
+  padding: 5px;
+  margin-left: 10px;
+  display: flex;
+  justify-content:space-evenly ;
+  align-items: center;
+}
+
+.header-lang:active{
+  border: 3px solid white;
+  border-radius: 3px;
+}
+
+.material-symbols-outlined{
+  color: #FFFFFF;
+  height: 15px;
+  width: 15px;
+  position: relative;
+  top: -5px;
+  left: -10px;
+}
+.header-english{
+  background-color: transparent;
+  position: relative;
+  top: -2px;
+  left: 8px;
+  padding-top: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFFFFF;
+  border: none;
+}
+
+nav button{
+  position: relative;
+  right: 68px;
+  background-color: #E50914;
+  color: white;
+  border-radius: 3px;
+  width: 77px;
+  height: 34px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+}
+
+.signin-button:hover{
+  background-color: #bd040d;
+  transition-duration: .4s;
+}
+
+.header-content{
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translate(-50%,-50%); 
+  text-align: center;
+  margin-top: 100px;
+}
+
+.header-content h1{
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 70px;
+  min-width: 1200px;
+  margin-bottom: 15px;
+}
+
+.header-content h3{
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-bottom: 25px;
+}
+
+.header-content p{
+  font-size: 21px;
+}
+
+.email-signup{
+  position: relative;
+  top: -3px;
+  left: 277px;
+  max-width: 377px;
+  border-radius: 4px;
+  display: flex;
+  margin-top: 30px;
+  margin-left: 20px;
+  overflow: hidden;
+  
+}
+
+.email-signup input{
+  
+  width: 377px;
+  height: 55px;
+  border: 0;
+  outline: 0;
+  padding-left: 19px;
+  border: 1.59px solid grey;
+  border-radius: 4px;
+  background-color: #000;
+  opacity: .70;
+}
+
+.email-signup:active{
+  border: 2px solid #FFFFFF;
+}
+
+::placeholder{
+  color: #FFFFFF;
+  font-size: 16px; 
+}
+
+.get-started-button{
+  position: relative;
+  top: -60px;
+  left: 185px;
+  width: 201px;
+  height: 56px;
+  background-color: #E50914;
+  border: 0;
+  outline: 0;
+  color: #FFFFFF;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.get-started-button:hover{
+  background-color: #bd040d;
+  transition-duration: .4s;
+
+}
+
+span{
+  font-weight: normal;
+}
+
+.features{
+  padding: 50px 12%;
+  font-size: 22px;
+  
+}
+
+.row{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  
+}
+
+.text-col{
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+
+.img-col{
+  flex-basis: 50%;
+  margin-bottom: 20px;
+}
+
+.img-col img{
+  display: block;
+  width: 90%;
+  margin: auto;
+}
+
+.features h2{
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.faq{
+  padding: 10px 12%;
+  text-align: center;
+  font-size: 18px
+}
+
+.faq h2{
+  font-weight: 700;
+  font-size: 48px
+}
+
+.accordian{
+  margin: 60px auto;
+  width: 100%;
+  max-width: 750px;
+}
+
+.accordian li{
+  list-style: none;
+  width: 100%;
+  padding: 5px;
+}
+
+.accordian li label{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  background: #303030;
+  margin-bottom: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+label::after{
+  content: '+';
+  font-size: 34px;
+  position: absolute;
+  right: inherit;
+  right: 20px;
+  transition: transform 0.5s;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+.accordian .content{
+  background-color: #303030;
+  text-align: left;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordian input[type="radio"]:checked + label + .content{
+  max-height: 600px;
+  padding: 30px 20px;
+}
+
+.accordian input[type="radio"]:checked + label::after{
+  transform: rotate(135deg);
+}
+
+.get-started-button-footer{
+  position: relative;
+  top: -59px;
+  left: 205px;
+  width: 201px;
+  height: 56px;
+  background-color: #E50914;
+  border: 0;
+  outline: 0;
+  color: #FFFFFF;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.get-started-button-footer:hover{
+  background-color: #bd040d;
+  transition-duration: .4s;
+}
